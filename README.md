@@ -22,12 +22,27 @@ Reading an unfamiliar codebase file by file is slow. NeedyNodes gives you the ae
 - **New commits.** Open a map you made from GitHub and NeedyNodes tells you when the repo has moved on, with one click to update.
 - **Findings.** Unresolved imports, dead ends, circular dependencies, unused files and oversized files, with a copy button for handing them to an AI.
 - **100% in your browser.** Your code is never uploaded. There is no server that sees it.
-- **Many languages.** Full parsing for JavaScript, TypeScript, JSX/TSX, Vue, Svelte, Python, Go and Rust; compact cards for CSS/SCSS/Less, HTML, JSON and YAML/TOML. Up to 1000 files per map.
+- **Many languages.** Full parsing for JavaScript (including .mjs and .cjs), TypeScript, JSX/TSX, Vue, Svelte, Python, Go, Rust and PHP; compact cards for CSS/SCSS/Less, HTML, JSON and YAML/TOML. Up to 1000 files per map.
 - **Save, share, come back.** Save a map to a file, share it as a link, or add a saved map to the one you have. Your last map is there when you return.
+- **Maps already drawn.** The [gallery](https://needynodes.com/gallery) has 32 well-known open source projects mapped, from Flask and FastAPI to Gin, ripgrep and Zustand.
+
+## Open any public repo
+
+Put `needynodes.com/` in front of a GitHub address and the repo opens as a map:
+
+```
+https://needynodes.com/github.com/pallets/flask
+```
+
+To link your own repo's map from its README, add this badge (with your owner and repo):
+
+```markdown
+[![Explore on NeedyNodes](https://needynodes.com/badge.svg)](https://needynodes.com/github.com/OWNER/REPO)
+```
 
 ## How it's built
 
-React 19 · TypeScript · Vite · ReactFlow · Zustand · Tailwind CSS 4 · @babel/parser for JS/TS · custom parsers for Python, Go and Rust. Parsing runs in a Web Worker; no tree-sitter or WASM, which keeps the bundle small.
+React 19 · TypeScript · Vite · ReactFlow · Zustand · Tailwind CSS 4 · @babel/parser for JS/TS · custom parsers for Python, Go, Rust and PHP. Parsing runs in a Web Worker; no tree-sitter or WASM, which keeps the bundle small.
 
 ## About this repo
 
