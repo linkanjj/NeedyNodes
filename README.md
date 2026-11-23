@@ -46,7 +46,7 @@ React 19 · TypeScript · Vite · ReactFlow · Zustand · Tailwind CSS 4 · @bab
 
 ## About this repo
 
-This repo is the public home of NeedyNodes: docs, roadmap discussion, bug reports and feature requests. The app itself is a hosted service at [needynodes.com](https://needynodes.com), and its source is not (yet) open.
+This repo is the public home of NeedyNodes: docs, bug reports and feature requests. The app itself is a hosted service at [needynodes.com](https://needynodes.com), and its source is not (yet) open.
 
 ## Feedback and issues
 
